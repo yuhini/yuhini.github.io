@@ -1,0 +1,373 @@
+@font-face {
+    font-family: 'aileronregular';
+    src: url('Aileron-Regular-webfont.eot');
+    src: url('Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Regular-webfont.woff2') format('woff2'),
+         url('Aileron-Regular-webfont.woff') format('woff'),
+         url('Aileron-Regular-webfont.ttf') format('truetype'),
+         url('Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aileronbold';
+    src: url('Aileron-Bold-webfont.eot');
+    src: url('Aileron-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Bold-webfont.woff2') format('woff2'),
+         url('Aileron-Bold-webfont.woff') format('woff'),
+         url('Aileron-Bold-webfont.ttf') format('truetype'),
+         url('Aileron-Bold-webfont.svg#aileronbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aileronitalic';
+    src: url('Aileron-Italic-webfont.eot');
+    src: url('Aileron-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Italic-webfont.woff2') format('woff2'),
+         url('Aileron-Italic-webfont.woff') format('woff'),
+         url('Aileron-Italic-webfont.ttf') format('truetype'),
+         url('Aileron-Italic-webfont.svg#aileronitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+}
+
+h1 {
+    font-family: 'aileronregular';
+    font-size: 40pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h2 {
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h2nav {
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h2nav:hover {
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: normal;
+    color: rgb(54, 47, 217);
+    text-decoration: none;
+}
+
+yfont{
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: lighter;
+    color: grey;
+    text-decoration: none;
+}
+
+bod {
+    font-family: 'aileronregular';
+    font-size: 12pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+
+    line-height: 1.5;
+}
+
+bod_header {
+    font-family: 'aileronregular';
+    font-size: 15pt;
+    font-weight: normal;
+    color: rgb(54, 47, 217);
+    text-decoration: none;
+}
+
+bod_bold {
+    font-family: 'aileronbold';
+    font-size: 12pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;  
+}
+
+a {
+    font-family: 'aileronregular';
+    font-size: 12pt;
+    font-weight: normal;
+    color: gray;
+    text-decoration: underline;
+}
+
+.nav_container {    
+    display: grid;
+    grid-template-rows: repeat(2, 45px);
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+
+    position: fixed;
+    top: 0;
+    margin-left: 5vw;
+    width: 100%;
+    max-width: 90vw;
+    z-index: 9999;
+
+    background: rgba(255, 255, 255);
+
+    border-bottom: solid;
+}
+
+.name {
+    grid-row: span 2;
+    grid-column: span 15;
+    justify-self: start;
+    align-self: center;
+    text-decoration: none;
+}
+
+.play {
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+.about {
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+.resume {
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+/* PROJECT INTRODUCTION */
+
+.project_introduction_container {
+    display: grid;
+    grid-template-rows: repeat(10, 45px);
+    grid-template-columns: repeat(24, 1fr);
+
+    /* box-sizing: border-box; */
+
+    padding-top: 180px; 
+    margin-left: 18vw;
+    max-width: 64vw;
+
+    /* background: rgba(76, 0, 255, 0.5) */
+}
+
+.project_question {
+    grid-row: span 3;
+    grid-column: span 24;
+    text-align: left;
+    margin-top: -45px;
+}
+
+.project_information_spacing {
+    grid-row: span 2;
+    grid-column: span 24;
+}
+
+.project_description {
+    grid-row: span 2;
+    grid-column: 1 / 8;
+    justify-self: left;
+    align-self: start;
+}
+
+.project_information {
+    grid-row: span 2;
+    grid-column: 9 / 16;
+    justify-self: left;
+    align-self: start;
+}
+
+.project_information_2 {
+    grid-row: span 2;
+    grid-column: 17 / 24;
+    justify-self: left;
+    align-self: start;
+}
+
+/* IMAGE GALLERY */
+.image_gallery {
+    display: grid;
+    grid-template-rows: repeat(autofill, 45px);
+    grid-template-columns: repeat(24, 1fr);
+
+    margin-left: 5vw;
+    max-width: 90vw;
+}
+
+.demo_video {
+    grid-row: repeat(autofill, 45px);
+    grid-column: span 24;
+
+    width: 90vw;
+    height: 40vw;
+    justify-self: center;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.photo_one {
+    grid-row: repeat(autofill, 45px);
+    grid-column: span 12;
+    height: 33.65vw;
+    justify-self: left;
+
+    padding-top: 1vw;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.photo_two {
+    grid-row: repeat(autofill, 45px);
+    grid-column: span 12;
+    height: 33.65vw;
+    justify-self: right;
+
+    padding-top: 1vw;
+    padding-left: 0.4vw;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.photo_three {
+    grid-row: repeat(autofill, 45px);
+    grid-column: span 12;
+    max-width: 44.5vw;
+    justify-self: left;
+
+    padding-top: 1vw;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.photo_four {
+    grid-row: repeat(autofill, 45px);
+    grid-column: span 12;
+    max-width: 44.5vw;
+    justify-self: right;
+
+    padding-top: 1vw;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.photo_five {
+    grid-row: repeat(autofill, 45px);
+    grid-column: span 12;
+    max-width: 44.5vw;
+    width: auto;
+    justify-self: left;
+
+    padding-top: 1vw;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.photo_six {
+    grid-row: repeat(autofill, 45px);
+    grid-column: span 12;
+    max-width: 44.5vw;
+    width: auto;
+    justify-self:right;
+
+    padding-top: 1vw;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.user_journey_gif {
+    grid-row: repeat(autofill, 45px);
+    grid-column: span 12;
+    max-width: 44.5vw;
+    width: auto;
+    justify-self: right;
+
+    padding-top: 1vw;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.user_journey_video {
+    grid-row: repeat(autofill, 45px);
+    grid-column: span 12;
+    max-width: 45vw;
+    width: 45vw;
+    height: 20vw;
+
+    justify-self: left;
+
+    padding-top: 1vw;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+/* FOOTER SPACING */
+.spacing_footer {
+    display: grid;
+    grid-template-rows: repeat(3, 45px);
+    grid-template-columns: repeat(24, 1fr);
+
+    margin-left: 18vw;
+    max-width: 64vw;
+}
+
+.footer_border {
+    grid-row: span 3;
+    grid-column: span 24;
+    border-bottom: solid;
+}
+
+/* FOOTER */
+.footer_container {
+    display: grid;
+    grid-template-rows: repeat(3, 45px);
+    grid-template-columns: repeat(24, 1fr);
+
+    margin-left: 18vw;
+    max-width: 64vw;
+}
+
+.previous {
+    grid-row: span 2;
+    grid-column: span 12;
+    justify-self: left;
+    align-self: center;
+    text-decoration: none;
+}
+
+.next {
+    grid-row: span 2;
+    grid-column: span 12;
+    justify-self: right;
+    align-self: center;
+    text-decoration: none;
+}
+
+
+

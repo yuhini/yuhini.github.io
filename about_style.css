@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'hanken_groteskitalic';
+    src: url('hankengrotesk-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('hankengrotesk-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hanken_groteskregular';
+    src: url('hankengrotesk-variablefont_wght-webfont.woff2') format('woff2'),
+         url('hankengrotesk-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aileronregular';
+    src: url('Aileron-Regular-webfont.eot');
+    src: url('Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Regular-webfont.woff2') format('woff2'),
+         url('Aileron-Regular-webfont.woff') format('woff'),
+         url('Aileron-Regular-webfont.ttf') format('truetype'),
+         url('Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronbold';
+    src: url('Aileron-Bold-webfont.eot');
+    src: url('Aileron-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Bold-webfont.woff2') format('woff2'),
+         url('Aileron-Bold-webfont.woff') format('woff'),
+         url('Aileron-Bold-webfont.ttf') format('truetype'),
+         url('Aileron-Bold-webfont.svg#aileronbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronitalic';
+    src: url('Aileron-Italic-webfont.eot');
+    src: url('Aileron-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Italic-webfont.woff2') format('woff2'),
+         url('Aileron-Italic-webfont.woff') format('woff'),
+         url('Aileron-Italic-webfont.ttf') format('truetype'),
+         url('Aileron-Italic-webfont.svg#aileronitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+}
+
+h1 {
+    font-family: 'aileronregular';
+    font-size: 40pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h1nav {
+    font-family: 'aileronregular';
+    font-size: 40pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h1nav:hover {
+    color: rgb(54, 47, 217);
+}
+
+h2 {
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h2nav {
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h2nav:hover {
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: normal;
+    color: rgb(54, 47, 217);
+    text-decoration: none;
+}
+
+yfont{
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: lighter;
+    color: grey;
+    text-decoration: none;
+}
+
+bod {
+    font-family: 'aileronregular';
+    font-size: 15pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+bod_header {
+    font-family: 'aileronregular';
+    font-size: 15pt;
+    font-weight: normal;
+    color: rgb(54, 47, 217);
+    text-decoration: none;
+}
+
+bod_bold {
+    font-family: 'aileronbold';
+    font-size: 12pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;  
+}
+
+.nav_container {    
+    display: grid;
+    grid-template-rows: repeat(2, 45px);
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+
+    position: fixed;
+    
+    top: 0;
+    margin-left: 5vw;;
+    width: 100%;
+    max-width: 90vw;
+    z-index: 9999;
+
+    background: rgba(255, 255, 255);
+
+    border-bottom: solid;
+}
+
+.name {
+    grid-row: span 2;
+    grid-column: span 15;
+    justify-self: start;
+    align-self: center;
+    text-decoration: none;
+}
+
+.play {
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+.about {
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+.resume {
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+/* SELF INTRODUCTION */
+.hello_container {
+    display: grid;
+    grid-template-rows: repeat(14, 45px);
+    grid-template-columns: repeat(24, 1fr);
+    padding-top: 135px; 
+    margin-left: 5vw;
+    max-width: 90vw;
+}
+
+.hi {
+    grid-row: span 2;
+    grid-column: span 16;
+    justify-self: left;
+    align-self: end;
+    height: 45px;
+    line-height: 0%;
+    margin-top: -15px;
+}
+
+.introduce {
+    grid-row: span 2;
+    grid-column: span 16;
+    
+    text-decoration: none;
+
+    justify-self: left;
+    align-self: start;
+    max-width: 40vw;
+    margin-top: 6px;
+
+    /* background: rgba(255, 0, 0, 0.5); */
+}
+
+.profile_image {
+    grid-row: span 14;
+    grid-column: span 8;
+    max-height: 630px;
+    justify-self: right;
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.description {
+    grid-row: span 10;
+    grid-column: span 8;
+    align-self: end;
+}
+
+.contacts {
+    grid-row: span 2;
+    grid-column: span 16;
+    align-self: end;
+}

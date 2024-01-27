@@ -1,0 +1,522 @@
+@font-face {
+    font-family: 'hanken_groteskitalic';
+    src: url('hankengrotesk-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('hankengrotesk-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hanken_groteskregular';
+    src: url('hankengrotesk-variablefont_wght-webfont.woff2') format('woff2'),
+         url('hankengrotesk-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aileronregular';
+    src: url('Aileron-Regular-webfont.eot');
+    src: url('Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Regular-webfont.woff2') format('woff2'),
+         url('Aileron-Regular-webfont.woff') format('woff'),
+         url('Aileron-Regular-webfont.ttf') format('truetype'),
+         url('Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronbold';
+    src: url('Aileron-Bold-webfont.eot');
+    src: url('Aileron-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Bold-webfont.woff2') format('woff2'),
+         url('Aileron-Bold-webfont.woff') format('woff'),
+         url('Aileron-Bold-webfont.ttf') format('truetype'),
+         url('Aileron-Bold-webfont.svg#aileronbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aileronitalic';
+    src: url('Aileron-Italic-webfont.eot');
+    src: url('Aileron-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Italic-webfont.woff2') format('woff2'),
+         url('Aileron-Italic-webfont.woff') format('woff'),
+         url('Aileron-Italic-webfont.ttf') format('truetype'),
+         url('Aileron-Italic-webfont.svg#aileronitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    scrollbar-gutter: stable;
+}
+
+h1 {
+    font-family: 'aileronregular';
+    font-size: 40pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h1nav {
+    font-family: 'aileronregular';
+    font-size: 40pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h1nav:hover {
+    color: rgb(54, 47, 217);
+}
+
+h2 {
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h2nav {
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+}
+
+h2nav:hover {
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: normal;
+    color: rgb(54, 47, 217);
+    text-decoration: none;
+}
+
+yfont{
+    font-family: 'aileronregular';
+    font-size: 20pt;
+    font-weight: lighter;
+    color: grey;
+    text-decoration: none;
+}
+
+.nav_container {    
+    display: grid;
+    grid-template-rows: repeat(2, 45px);
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+
+    position: fixed;
+    
+    top: 0;
+    margin-left: 5vw;;
+    width: 100%;
+    max-width: 90vw;
+    z-index: 9999;
+
+    background: rgba(255, 255, 255);
+
+    border-bottom: solid;
+}
+
+.name {
+    grid-row: span 2;
+    grid-column: span 15;
+    justify-self: start;
+    align-self: center;
+    text-decoration: none;
+}
+
+.play {
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+.about {
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+.resume {
+    grid-row: span 2;
+    grid-column: span 3;
+    justify-self: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+/* SELF INTRODUCTION */
+.hello_container {
+    display: grid;
+    grid-template-rows: repeat(6, 45px);
+    grid-template-columns: repeat(24, 1fr);
+
+    /* box-sizing: border-box; */
+
+    padding-top: 135px; 
+    margin-left: 5vw;
+    max-width: 90vw;
+    border-bottom: solid;
+
+    /* background: rgba(76, 0, 255, 0.5) */
+}
+
+.hi {
+    grid-row: span 2;
+    grid-column: span 24;
+    justify-self: left;
+    align-self: end;
+    height: 45px;
+    line-height: 0%;
+    margin-top: -15px;
+    /* background: rgba(255, 0, 0, 0.5); */
+}
+
+.introduce {
+    grid-row: span 2;
+    grid-column: span 24;
+    
+    text-decoration: none;
+
+    justify-self: left;
+    align-self: baseline;
+    max-width: 40vw;
+    margin-top: 1vw;
+
+    /* background: rgba(255, 0, 0, 0.5); */
+}
+
+/* LAMP */
+.lamp_container {
+    display: grid;
+    grid-template-rows: repeat(autofill, 45px);
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+
+    padding-top: 90px; 
+    margin-left: 5vw;
+    max-width: 90vw;
+}
+
+.lamp_title {
+    grid-row: span 5;
+    grid-column: span 8;
+    text-decoration: none;
+
+    justify-self: left;
+    align-self: start;
+}
+
+.lamp_time {
+    grid-row: span 1;
+    grid-column: span 8;
+
+    justify-self: left;
+    align-self: bottom;
+    padding-top: 1vw;
+}
+
+.lamp_image {
+    grid-row: span 16;
+    grid-column: span 16;
+    justify-self: end;
+    max-width: 50vw;
+    width: auto;
+    background-position: center center;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+/* ON-THE-GO MEAL EXPERIENCE */
+.on-the-go-meal-experience_container {
+    display: grid;
+    grid-template-rows: repeat(autofill, 45px);
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+
+    padding-top: 90px; 
+    margin-left: 5vw;
+    max-width: 90vw;
+}
+
+.otg-meal-experience_title {
+    grid-row: span 5;
+    grid-column: span 8;
+    text-decoration: none;
+
+    justify-self: left;
+    align-self: start;
+}
+
+.otg-meal-experience_time {
+    grid-row: span 1;
+    grid-column: span 8;
+
+    justify-self: left;
+    align-self: bottom;
+    padding-top: 1vw;
+}
+
+.otg-meal-experience_image {
+    grid-row: span 16;
+    grid-column: span 16;
+    justify-self: end;
+    max-width: 50vw;
+    width: auto;
+    background-position: center center;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+/* KINDERGARTEN FIRE ALARM */
+.compass_container {
+    display: grid;
+    grid-template-rows: repeat(autofill, 45px);
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+
+    padding-top: 90px; 
+    margin-left: 5vw;
+    max-width: 90vw;
+}
+
+.compass_title {
+    grid-row: span 5;
+    grid-column: span 8;
+    text-decoration: none;
+    justify-self: left;
+    align-self: start;
+}
+
+.compass_time {
+    grid-row: span 1;
+    grid-column: span 8;
+
+    justify-self: left;
+    align-self: bottom;
+    padding-top: 1vw;
+}
+
+.compass_image {
+    grid-row: span 16;
+    grid-column: span 16;
+    justify-self: end;
+    max-width: 50vw;
+    width: auto;
+    background-position: center center;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+/* KINDERGARTEN FIRE ALARM */
+.firealarm_container {
+    display: grid;
+    grid-template-rows: repeat(autofill, 45px);
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+
+    padding-top: 90px; 
+    margin-left: 5vw;
+    max-width: 90vw;
+}
+
+.firealarm_title {
+    grid-row: span 5;
+    grid-column: span 8;
+    text-decoration: none;
+    justify-self: left;
+    align-self: start;
+}
+
+.firealarm_time {
+    grid-row: span 1;
+    grid-column: span 8;
+
+    justify-self: left;
+    align-self: bottom;
+    padding-top: 1vw;
+}
+
+.firealarm_image {
+    grid-row: span 16;
+    grid-column: span 16;
+    justify-self: end;
+    max-width: 50vw;
+    width: auto;
+    background-position: center center;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+/* STOOL */
+.stool_container {
+    display: grid;
+    grid-template-rows: repeat(autofill, 45px);
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+
+    padding-top: 90px; 
+    margin-left: 5vw;
+    max-width: 90vw;
+}
+
+.stool_title {
+    grid-row: span 5;
+    grid-column: span 8;
+    text-decoration: none;
+    justify-self: left;
+    align-self: start;
+}
+
+.stool_time {
+    grid-row: span 1;
+    grid-column: span 8;
+    justify-self: left;
+    align-self: bottom;
+    padding-top: 1vw;
+}
+
+.stool_image {
+    grid-row: span 16;
+    grid-column: span 16;
+    justify-self: end;
+    max-width: 50vw;
+    width: auto;
+    background-position: center center;
+
+    box-shadow: 0em 1em 0.75em -1em;
+}
+
+.spacing {
+    display :grid;
+    grid-template-rows: repeat(2, 45px);
+    grid-template-columns: repeat(24, minmax(0, 1fr));
+}
+
+
+/* SCREEN SIZE ADJUSTMENT */
+
+
+
+/* ALL BELOW IS IMAGE ADJUSTMENTS */
+/* INCREMENTS OF 130 PIXELS */
+@media (max-width: 1790px){
+    .otg-meal-experience-image {
+        grid-row: span 15;
+    }
+}
+
+@media (max-width: 1660px){
+    .otg-meal-experience-image {
+        grid-row: span 14;
+    }
+}
+
+@media (max-width: 1530px){
+    .otg-meal-experience-image {
+        grid-row: span 13;
+    }
+}
+
+@media (max-width: 1400px){
+    .otg-meal-experience-image {
+        grid-row: span 12;
+    }
+}
+
+@media (max-width: 1270px){
+    .otg-meal-experience-image {
+        grid-row: span 11;
+    }
+}
+
+@media (max-width: 1140px){
+    .otg-meal-experience-image {
+        grid-row: span 10;
+    }
+}
+/* ALL ABOVE IS IMAGE ADJUSGMENTS */
+
+
+/* OTHER SCREEN ADJUSTMENTS */
+@media (max-width: 1420px){
+    .hello_container{
+        padding-top: 180px;
+        grid-template-rows: repeat(5, 45px);
+    }
+}
+
+
+/* NAVBAR CHANGE */
+@media (max-width: 1130px){
+    .nav_container{
+        grid-template-rows: repeat(4, 45px);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .name{
+        grid-row: span 2;
+        grid-column: span 4;
+        justify-self: start;
+        align-self: center;
+    }
+    
+    .play{
+        grid-row: span 1;
+        grid-column: span 1;
+        justify-self: start;
+        align-self: center;
+    }
+    
+    .about{
+        grid-row: span 1;
+        grid-column: span 1;
+        justify-self: start;
+        align-self: center;
+    }
+    
+    .resume{
+        grid-row: span 1;
+        grid-column: span 1;
+        justify-self: start;
+        align-self: center;
+    }
+
+    .hello_container{
+        padding-top: 180px;
+        grid-template-rows: repeat(4, 45px);
+    }
+
+    .introduce{
+        max-width: 90%;
+    }
+
+    .otg-meal-experience-title {
+        grid-row: span 4;
+        grid-column: span 24;
+    }
+
+    .otg-meal-experience-image {
+        grid-row: span 10;
+        grid-column: span 24;
+        justify-self: start;
+        max-width: 90vw;
+        width: 90vw;
+
+    }
+}
+
+@media (max-width: 630px){
+    .hello_container{
+        padding-top: 180px;
+        grid-template-rows: repeat(5, 45px);
+    }
+}
